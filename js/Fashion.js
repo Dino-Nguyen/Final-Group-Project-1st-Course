@@ -17,10 +17,10 @@ function render_header() {
         onclick="location.href='./index.html';"
         >
         N.Y.E</a>
-        <a id="menu" class="native" href="#img1">FASHION</a>
-        <a id="menu" class="native" href="#">WATCHES</a>
-        <a id="menu" class="native" href="#">SHOES</a>
-        <a id="menu" class="native" href="#section4__container1">BAGS</a>
+        <a id="menu1" class="native" href="#">Women's Fashion</a>
+        <a id="menu0" class="native" href="#">FASHION Page</a>
+        <a id="menu2" class="native" href="#">Men's Fashion</a>
+       
         <a id="cata" class="native" href="#">CATALOG</a>
         <span id="user__container" href="#"> </span>
 
@@ -45,10 +45,10 @@ function render_header() {
                    
                    dropContent.innerHTML += `
                    
-                   <button id="dropMenu" onclick="location.href='./Fashion.html';" >FASHION</button>
-                   <button id="dropMenu">WATCHES</button>
-                   <button id="dropMenu" >SHOES</button>
-                   <button id="dropMenu" >BAGS</button>
+                   <button id="dropMenu" href="#">Women's Fashion</button>
+                  
+                   <button id="dropMenu" href="#">Men's Fashion</button>
+                  
                    `
                   
                 }
@@ -63,9 +63,9 @@ function render_header() {
         const userContainer = document.querySelector("#user__container")
         function user(){
         userContainer.innerHTML += `
-        <span class="info"> About Us </span>
-        <span id="log" class="info" type="button" onclick="location.href='./login.html'"> Login</span>
-        <span class="info"> Register </span>
+        <span id = "Ab" class="info"> About Us </span>
+        <span id = "log" class="info" type="button" onclick="location.href='./login.html'"> Login</span>
+        <span id = "register" class="info"> Register </span>
 
         `;
        
@@ -81,6 +81,7 @@ render_header();
 function main_page_fashion() {
     mainPage.innerHTML += `
     <div id="mainPageFashion"> </div>
+    <a href="#"><button onclick="topFunction()" id="myBtn" title="Go to top">Top</button></a>
     `;
 
     // section Men's  Fashion, section Women's  Fashion
@@ -101,146 +102,163 @@ function main_page_fashion() {
 
             function fashion_selections() {
                 fashionSelections.innerHTML +=`
-            <div id="womenFashion" > <img id=imgWomenFashion
+                <p class ="titF"><i> - READY TO WEAR - </i> </p>
+            <div id="womenFashion"> <img id=imgWomenFashion
             src = "https://www.chanel.com/images/q_auto,f_auto,fl_lossy,dpr_auto/w_1920/FSH-1639756228960-22pplpdrtw00header.jpg"
-            /> WOMEN
+            />
+            <a class="A" href="#">   WOMEN  <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
             </div>
-<div id ="WFcontainer"> </div>
+            <div id="FCon1" class="FCon" >
+<div id ="WFcontainer"> 
+<p class="titFC">Women's Fashion</p>
+ </div> </div>
 
 
-            <div id="menFashion"> MEN <img id=imgMenFashion
+            <div id="menFashion">
+            <a class="A"  href="#">     MEN   <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+              <img id=imgMenFashion
             src ="
             https://www.dior.com/couture/var/dior/storage/images/horizon/mens-fashion/man/block-cover-sacai-cover/block-cover-item-cover/28730917-15-eng-GB/cover_1440_1200.jpg" />
             
             </div>
-
-<div id ="MFcontainer"> </div>
+            <div id="FCon2" class="FCon" >
+<div id ="MFcontainer" >
+<p class="titFC">Men's Fashion</p> 
+ </div> </div>
             `;
             };
             fashion_selections()
        
 }
 
-main_page_fashion();
 
+main_page_fashion();
 
 
 const FashionProductListW = [
     {
         name: "123",
-        image: ".images/section 1/women/jackets/6.jpg",
+        image: "./images/section 1/women/jackets/6.jpg",
         price: "$200",
         gender: "FEMAL",
         color: "WHITE",
     },
     {
         name: "123",
-        image: ".images/section 1/women/jackets/5.jpg",
+        image: "./images/section 1/women/jackets/5.jpg",
         price: "$200",
         gender: "FEMAL",
         color: "WHITE",
     },
     {
         name: "123",
-        image: ".images/section 1/women/jackets/4.jpg",
+        image: "./images/section 1/women/jackets/4.jpg",
         price: "$200",
         gender: "FEMAL",
         color: "WHITE",
     },
      {
         name: "123",
-        image: ".images/section 1/women/jackets/3.jpg",
+        image: "./images/section 1/women/jackets/3.jpg",
         price: "$200",
         gender: "FEMAL",
         color: "WHITE",
     },
      {
         name: "123",
-        image: ".images/section 1/women/jackets/2.jpg",
+        image: "./images/section 1/women/jackets/2.jpg",
         price: "$200",
         gender: "FEMAL",
         color: "WHITE",
     },
      {
         name: "123",
-        image: ".images/section 1/women/jackets/1.jpg",
+        image: "./images/section 1/women/jackets/1.jpg",
         price: "$200",
         gender: "FEMAL",
         color: "WHITE",
     },
     {
         name: "123",
-        image: ".images/section 1/women/dresses/5.jpg",
+        image: "./images/section 1/women/dresses/5.jpg",
         price: "$200",
         gender: "FEMAL",
         color: "WHITE",
     },
     {
         name: "123",
-        image: ".images/section 1/women/dresses/4.jpg",
+        image: "./images/section 1/women/dresses/4.jpg",
         price: "$200",
         gender: "FEMAL",
         color: "WHITE",
     },
     {
         name: "123",
-        image: ".images/section 1/women/dresses/3.jpg",
+        image: "./images/section 1/women/dresses/3.jpg",
         price: "$200",
         gender: "FEMAL",
         color: "WHITE",
     },
     {
         name: "123",
-        image: ".images/section 1/women/dresses/2.jpg",
+        image: "./images/section 1/women/dresses/2.jpg",
         price: "$200",
         gender: "FEMAL",
         color: "WHITE",
     },
     {
         name: "123",
-        image: ".images/section 1/women/dresses/1.jpg",
+        image: "./images/section 1/women/dresses/1.jpg",
         price: "$200",
         gender: "FEMAL",
         color: "WHITE",
     },
     {
         name: "123",
-        image: ".images/section 1/women/coats/6.jpg",
+        image: "./images/section 1/women/coats/6.jpg",
         price: "$200",
         gender: "FEMAL",
         color: "WHITE",
     },
     {
         name: "123",
-        image: ".images/section 1/women/coats/5.jpg",
+        image: "./images/section 1/women/coats/5.jpg",
         price: "$200",
         gender: "FEMAL",
         color: "WHITE",
     },
     {
         name: "123",
-        image: ".images/section 1/women/coats/4.jpg",
+        image: "./images/section 1/women/coats/4.jpg",
         price: "$200",
         gender: "FEMAL",
         color: "WHITE",
     },
     {
         name: "123",
-        image: ".images/section 1/women/coats/3.jpg",
+        image: "./images/section 1/women/coats/3.jpg",
         price: "$200",
         gender: "FEMAL",
         color: "WHITE",
     },
     {
         name: "123",
-        image: ".images/section 1/women/coats/2.jpg",
+        image: "./images/section 1/women/coats/2.jpg",
         price: "$200",
         gender: "FEMAL",
         color: "WHITE",
     },
     {
         name: "123",
-        image: ".images/section 1/women/coats/1.jpg",
+        image: "./images/section 1/women/coats/1.jpg",
         price: "$200",
         gender: "FEMAL",
         color: "WHITE",
@@ -252,98 +270,98 @@ const FashionProductListW = [
 const FashionProductListM = [
     {
         name: "123",
-        image: ".images/section 1/men/outerwear/1.jpg",
+        image: "./images/section 1/men/outerwear/1.jpg",
         price: "$200",
         gender: "FEMAL",
         color: "WHITE",
     },
     {
         name: "123",
-        image: ".images/section 1/men/outerwear/2.jpg",
+        image: "./images/section 1/men/outerwear/2.jpg",
         price: "$200",
         gender: "FEMAL",
         color: "WHITE",
     },
     {
         name: "123",
-        image: ".images/section 1/men/outerwear/3.jpg",
+        image: "./images/section 1/men/outerwear/3.jpg",
         price: "$200",
         gender: "FEMAL",
         color: "WHITE",
     },
     {
         name: "123",
-        image: ".images/section 1/men/outerwear/4.jpg",
+        image: "./images/section 1/men/outerwear/4.jpg",
         price: "$200",
         gender: "FEMAL",
         color: "WHITE",
     },
     {
         name: "123",
-        image: ".images/section 1/men/outerwear/5.jpg",
+        image: "./images/section 1/men/outerwear/5.jpg",
         price: "$200",
         gender: "FEMAL",
         color: "WHITE",
     },
     {
         name: "123",
-        image: ".images/section 1/men/outerwear/6.jpg",
+        image: "./images/section 1/men/outerwear/6.jpg",
         price: "$200",
         gender: "FEMAL",
         color: "WHITE",
     },
     {
         name: "123",
-        image: ".images/section 1/men/outerwear/7.jpg",
+        image: "./images/section 1/men/outerwear/7.jpg",
         price: "$200",
         gender: "FEMAL",
         color: "WHITE",
     },
     {
         name: "123",
-        image: ".images/section 1/men/outerwear/8.jpg",
+        image: "./images/section 1/men/outerwear/8.jpg",
         price: "$200",
         gender: "FEMAL",
         color: "WHITE",
     },
     {
         name: "123",
-        image: ".images/section 1/men/outerwear/9.jpg",
+        image: "./images/section 1/men/outerwear/9.jpg",
         price: "$200",
         gender: "FEMAL",
         color: "WHITE",
     },
     {
         name: "123",
-        image: ".images/section 1/men/outerwear/10.jpg",
+        image: "./images/section 1/men/outerwear/10.jpg",
         price: "$200",
         gender: "FEMAL",
         color: "WHITE",
     },
     {
         name: "123",
-        image: ".images/section 1/men/jackets/1.jpg",
+        image: "./images/section 1/men/jackets/1.jpg",
         price: "$200",
         gender: "FEMAL",
         color: "WHITE",
     },
     {
         name: "123",
-        image: ".images/section 1/men/jackets/2.jpg",
+        image: "./images/section 1/men/jackets/2.jpg",
         price: "$200",
         gender: "FEMAL",
         color: "WHITE",
     },
     {
         name: "123",
-        image: ".images/section 1/men/jackets/3.jpg",
+        image: "./images/section 1/men/jackets/3.jpg",
         price: "$200",
         gender: "FEMAL",
         color: "WHITE",
     },
     {
         name: "123",
-        image: ".images/section 1/men/jackets/4.jpg",
+        image: "./images/section 1/men/jackets/4.jpg",
         price: "$200",
         gender: "FEMAL",
         color: "WHITE",
@@ -353,11 +371,104 @@ const FashionProductListM = [
 
 
 
+function render_section1_Wproduct () {
+    for (let product of FashionProductListW) {
+        document.getElementById("WFcontainer").innerHTML += `
+            <div class="product__item">
+                <div class="product__image">
+                    <a><img src="` + product.image + `" alt=""></a>
+                </div>
+                <div class="product__info">
+                    <div class="product__name">
+                        <a href="#">`+ product.name +`</a>
+                    </div>
+                    <div class="product__price">` + product.price + `</div>
+                    <div class="product__color">` + product.color + `</div>
+                </div>
+                <div class ="btnC"><button id="btn__cart" onclick="add_to_cart()">ADD TO CART</button></div>
+            </div>
+        `
+    }
+}
+render_section1_Wproduct ()
+
+function render_section1_Mproduct () {
+    for (let product of FashionProductListM) {
+        document.getElementById("MFcontainer").innerHTML += `
+            <div class="product__item">
+                <div class="product__image">
+                    <a><img src="` + product.image + `" alt=""></a>
+                </div>
+                <div class="product__info">
+                    <div class="product__name">
+                        <a href="#">`+ product.name +`</a>
+                    </div>
+                    <div class="product__price">` + product.price + `</div>
+                    <div class="product__color">` + product.color + `</div>
+                </div>
+                <div class ="btnC"><button id="btn__cart" onclick="add_to_cart()">ADD TO CART</button></div>
+            </div>
+        `
+    }
+}
+render_section1_Mproduct ()
 
 
+ // RUN ONCLICK FUNCTIONS 
+ document.getElementById("Ab").onclick = function() {
+    alert("We are group 6 at C4EJS126 of MindX.");
+    
+}
 
+const mybutton = document.getElementById("myBtn");
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+  if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+ function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+};
+topFunction()
 
+document.getElementById("menu0").onclick = function() {
+    document.getElementById("womenFashion").style.display = "flex";
+    document.getElementById("menFashion").style.display = "flex";
+    document.getElementById("FCon1").style.display = "none";
+    document.getElementById("FCon2").style.display = "none";
+}
 
+document.getElementById("menu1").onclick = function() {
+    document.getElementById("womenFashion").style.display = "none";
+    document.getElementById("menFashion").style.display = "none";
+    document.getElementById("FCon1").style.display = "flex";
+    document.getElementById("FCon2").style.display = "none";
+}
+
+document.getElementById("menu2").onclick = function() {
+    document.getElementById("womenFashion").style.display = "none";
+    document.getElementById("menFashion").style.display = "none";
+    document.getElementById("FCon1").style.display = "none";
+    document.getElementById("FCon2").style.display = "flex";
+}
+
+document.getElementById("womenFashion").onclick = function() {
+    document.getElementById("womenFashion").style.display = "none";
+    document.getElementById("menFashion").style.display = "none";
+    document.getElementById("FCon1").style.display = "flex";
+    document.getElementById("FCon2").style.display = "none";
+}
+
+document.getElementById("menFashion").onclick = function() {
+    document.getElementById("womenFashion").style.display = "none";
+    document.getElementById("menFashion").style.display = "none";
+    document.getElementById("FCon1").style.display = "none";
+    document.getElementById("FCon2").style.display = "flex";
+}
 
 
 

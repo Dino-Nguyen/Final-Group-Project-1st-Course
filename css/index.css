@@ -49,7 +49,7 @@ body {
 
 section {
     width: 100%;
-    height: 1200px;
+   
     margin-top: 0px;
     background-color: rgb(255, 255, 255);
     color: rgb(247, 53, 53);
@@ -80,7 +80,7 @@ section {
     align-items: center;
     position: sticky;
     top: 0;
-    z-index: 99;
+    z-index: 2;
     opacity: 0.8;
 }
 #header:hover {
@@ -96,11 +96,16 @@ section {
     border: 0px solid black;
     border-radius: 20px;
     padding: 5px 10px 5px 10px;
+    
 }
+#logo__main, #logo__main2, .native {
+    font-weight: bolder;
+}
+
 #logo__main:hover, #logo__main2:hover, .native:hover , #Ab:hover, #log:hover, #register:hover {
     color:rgba(2, 53, 25, 0.555);
     opacity: 1;
-    font-weight: bolder;
+    
 }
 
 .native:hover {
@@ -108,6 +113,7 @@ section {
     padding: 10px ;
     opacity: 1;
     font-weight: bolder;
+
 }
 
 #logo__main {
@@ -131,12 +137,8 @@ section {
 
 
 
-#log {
-    border-left: 1px solid rgb(173, 131, 24) ;
-    border-right: 1px solid rgb(173, 131, 24) ;
-    padding: 10px;
-}
-#Ab , #register {
+
+#Ab , #register , #log {
     padding: 10px;
 }
 
@@ -175,25 +177,57 @@ video {
     border:1px solid rgb(160, 123, 0);
   }
 
+  #tit1 {
+      font-family: Eina03,helvetica neue,helvetica;
+      color:white;
+      z-index: 3;
+     font-weight: lighter;
+      position: relative;
+      top : 550px;
+      display: flex;
+      justify-content: center;
+      font-size: 30px;
+      height: 0;
+  }
+
+#tit2{
+    font-family: Eina03,helvetica neue,helvetica;
+    color:white;
+      z-index: 3;
+      font-weight: bolder;
+      position: relative;
+      top : 600px;
+      display: flex;
+      justify-content: center;
+      font-size: 70px;
+      height: 0;
+}
+
+
+  /*  FOOTER  */
+
 #mainFooter {
     width: 100%;
-    height: 454px;
-    background-color: rgb(160, 123, 0);
-    margin: auto;
+   
+    
+    border-top:2px solid  rgb(248, 231, 183);
+    border-bottom:4px solid rgb(160, 123, 0);
+    margin-top: 50px;
 }
 
 .contact__container {
     width: 100%;
     height: 380px;
-    background-color: rgb(248, 231, 183);
-    color: white;
+    
+    border-bottom:2px solid rgb(160, 123, 0);
+    color: rgb(0, 0, 0);
     text-align: center;
 }
 #copyrightInfo {
     width: 100%;
-    height: 74px;
-    background-color: rgba(121, 120, 70, 0.171);
-    color: white;
+    height: 100px;
+    background-color: rgb(247, 236, 205);
+    color: rgb(0, 0, 0);
     text-align: center;
 }
 
@@ -201,13 +235,14 @@ video {
 
 /* SECTION 1 CSS */
 .section__1 {
-    
+    width: auto;
     padding: 5% ;
     padding-top: 8%;
     flex-direction: column;
     background-color: white;
     color: black;
     margin-bottom: 20%;
+    border: 2px solid black;
 }
 
 h1 {
@@ -249,12 +284,12 @@ h1 {
     width: 0%;
     height: 100%;
     display: inline-block;
-    background: rgb(187, 148, 50);
+    background: rgb(226, 171, 32);
     position: absolute;
     -ms-transform: skewX(-20deg);
     -webkit-transform: skewX(-20deg); 
     transform: skewX(-20deg);   
-    left: -10%;
+    left: 1%;
     opacity: 1;
     top: 0;
     z-index: -12;
@@ -271,7 +306,7 @@ h1 {
     width: 0%;
     height: 100%;
     display: block;
-    background: #e9a931;
+    background: #ffe6b7;
     position: absolute;
   -ms-transform: skewX(-20deg);
     -webkit-transform: skewX(-20deg); 
@@ -289,7 +324,7 @@ h1 {
   }
   .button1:hover::before{
     opacity:1;
-    width: 116%;
+    width: 100%;
   }
   .button1:hover::after{
     opacity:1;
@@ -339,6 +374,10 @@ h1 {
 
 
 /* SECTION 4 CSS TUAN ANH */
+.section__4 {
+    height: 1600px;
+}
+
 .section4__container {
     background-color: rgb(255, 255, 255);
     height: 500px;
@@ -346,8 +385,40 @@ h1 {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    justify-content: space-between;
-    margin-left: 50px;
+}
+
+.section4__introduce {
+    font-family: "Circular Std",sans-serif;
+    height: 400px;
+    background-color: rgb(255, 255, 255);
+    margin: 20px 0px 20px 0px;
+}
+
+h2, p {
+    margin-top: 20px;
+}
+p, a {
+    color: black;
+    line-height: 20px;
+}
+.product__intro {
+    font-size: 14px;
+    color: black;
+    width: 40%;
+    height: 200px;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    left: 108px;    
+}
+
+.product__intro2 {
+    font-size: 14px;
+    color: black;
+    width: 40%;
+    height: 200px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    right: 90px;
 }
 .section4__container a {
     text-decoration: none;
@@ -358,13 +429,26 @@ h1 {
     font-size: 16px;
     font-family: "Circular Std",sans-serif;
     color:rgb(173, 131, 24);
+    margin: 0px 20px 0px 20px;
+    border: 2px solid black;
+    width: 250px;
+    height: 400px;
 
 }
 
+
+
 #btn__cart {
-    display: flex;
-    justify-content: center;
     cursor: pointer;
+    width: 250px;
+    height: 30px;
+    border: 0;
+    font-family: "Circular Std",sans-serif;
+    background-color:rgb(173, 131, 24);
+    color: white;
+    border-radius: 8px;
+    font-weight: bold;
+    margin-top: 10px;
 }
 #btn__cart:hover {
     background-color: burlywood;

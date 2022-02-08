@@ -3,6 +3,7 @@ const mainPage = document.querySelector('#mainPage');
 function render_header() {
     mainPage.innerHTML += `
     <div id="header"></div>
+    <a href="#"><button onclick="topFunction()" id="myBtn" title="Go to top">Top</button></a>
     `;
 
     // RENDER HEADER NATIVE BUTTON - USER LOGIN
@@ -75,10 +76,7 @@ function render_header() {
    
 };
 render_header();
-document.getElementById("Ab").onclick = function() {
-    alert("Hello world");
-    
-}
+
 
 // RENDER MAIN SECTION
 function render_main_section () {
@@ -92,9 +90,11 @@ function render_main_section () {
 
   const imgHeader = document.querySelector (".img_header")
   function video1() {
-  imgHeader.innerHTML += ` 
+  imgHeader.innerHTML += ` <div>
+   <div id="tit1"><i>HAUTE COUTURE</i></div>
+    <div id="tit2">SPRING-SUMMER 2022 SHOW</div>
   <img class="imgHead" src="https://images.unsplash.com/photo-1468818519844-64bc429824de?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80"/>
-  
+  </div>
   `
   };
   video1();
@@ -112,7 +112,7 @@ function render_main_section () {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
   };
-  
+  topFunction()
 
     // RENDER SECTION ITEMS
 
@@ -179,12 +179,37 @@ function render_main_section () {
     render_section4_cap1();
 
     // SECTION 4 CONTAINER 1
-    function section4__container1() {
+    function section4_container1() {
         section4Item1.innerHTML += `
         <div id="section4__container1" class="section4__container"></div>
         `
     }
-    section4__container1();
+    section4_container1();
+
+    // SECTION 4 INTRODUCE
+    function section4_introduce() {
+        section4Item1.innerHTML += `
+        <div id="" class="section4__introduce"></div>
+        `
+    }
+    section4_introduce();
+
+    const section4IntroItem = document.querySelector('.section4__introduce');
+    function render_section4_intro() {
+        section4IntroItem.innerHTML += `
+        <div id="" class="product__intro">
+            <h2>WOMEN’S BAGS</h2>
+            <p>The KENZO bags for women are practical and sophisticated creations which will be the perfect finishing touch to your outfits. Backpacks, handbags, clutches, bumbags … These KENZO accessories will elevate your urban looks as well as your evening outfits. Carry around your essentials without compromising style with our iconic ONDA and ARCTIK collections, and vary your looks while giving them a playful twist thanks to our various shoulder straps.</p>
+            <p>View all our <a href="#">products.</a></p>
+        </div>
+        <div id="" class="product__intro2">
+        <h2>MEN’S BAGS</h2>
+        <p>The KENZO bags for women are practical and sophisticated creations which will be the perfect finishing touch to your outfits. Backpacks, handbags, clutches, bumbags … These KENZO accessories will elevate your urban looks as well as your evening outfits. Carry around your essentials without compromising style with our iconic ONDA and ARCTIK collections, and vary your looks while giving them a playful twist thanks to our various shoulder straps.</p>
+        <p>View all our <a href="#">products.</a></p>
+    </div>
+        `
+    }
+    render_section4_intro();
 
     function render_section4_cap2() {
         section4Item1.innerHTML += `
@@ -214,10 +239,10 @@ function render_main_section () {
             color: "BLACK",
         },
         {
-            name: "KENZO Sport backpack with strap",
+            name: "KENZO Sport backpack W strap",
             url: "#",
-            image: "./images/section 4/KENZO Sport backpack with strap.jpg",
-            image2: "./images/section 4/KENZO Sport backpack with strap 2.jpg",
+            image: "./images/section 4/KENZO Sport backpack W strap.jpg",
+            image2: "./images/section 4/KENZO Sport backpack W strap 2.jpg",
             price: "$295",
             gender: "MALE",
             color: "WHITE",
@@ -328,6 +353,19 @@ render_main_section();
 
 // LOGIN FUNCTION
 
+
+
+
+
+
+
+
+
+//  RUN ONCLICK FUNCTIONS 
+document.getElementById("Ab").onclick = function() {
+    alert("We are group 6 at C4EJS126 of MindX.");
+    
+}
 
 // RENDER FOOTER
 const mainFooter = document.querySelector('#mainFooter');
