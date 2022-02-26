@@ -4,7 +4,7 @@
 1/ NGUYỄN THỦY TIÊN<br>
 2/ NGUYỄN TUẤN ANH<br>
 
-link web : 
+link web : https://dino-nguyen.github.io/Final-Group-Project-1st-Course/
 
 Demo video : 
 ![unknown (1)](https://user-images.githubusercontent.com/97055595/155831084-05b65378-0e8c-4bcf-a6fe-2b56fdfabdf4.png)
