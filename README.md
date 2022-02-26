@@ -7,5 +7,3 @@
 link web : 
 
 Demo video : 
-
-@[vimeo](./images/demo video.mp4)
