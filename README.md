@@ -7,4 +7,5 @@
 link web : 
 
 Demo video : 
-[![Watch the video]](./images/demo video.mp4)
+
+{@vimeo:./images/demo video.mp4}
