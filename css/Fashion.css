@@ -15,25 +15,21 @@ body {
 }
 #header {
     height: 80px;
-    background-color: #e0d1b2;
-    box-shadow:0px 2px 4px rgb(219, 219, 219);
+    background-color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
     position: sticky;
     top: 0;
     z-index: 2;
-    opacity: 0.8;
+    border-bottom: 1px solid rgb(160, 123, 31);;
 }
-#header:hover {
-    opacity: 1;
-}
-#logo__main, #logo__main2, .native , #user__container {
+#logo__main, #logo__main2, .native , #logo__main3, #user__container {
     text-decoration: none;
     cursor: pointer;
     margin: 20px;
     font-size: 20px;
-    color: rgb(255, 255, 255); 
+    color: rgb(160, 123, 31); 
     font-family: "Circular Std",sans-serif;
     border: 0px solid black;
     border-radius: 20px;
@@ -42,8 +38,12 @@ body {
 #logo__main, #logo__main2, .native {
     font-weight: bolder;
 }
+#cart__icon, span {
+    text-decoration: none;
+    color: rgb(160, 123, 31);
+}
 
-#logo__main:hover, #logo__main2:hover, .native:hover , #Ab:hover, #log:hover, #register:hover {
+#logo__main:hover, #logo__main2:hover, .native:hover , #Ab:hover, #log:hover, #register:hover, .material-icons:hover, span:hover {
     color:rgba(2, 53, 25, 0.555);
     opacity: 1;
     
@@ -62,7 +62,7 @@ body {
     background-color: none;
     font-weight: bolder;
     font-size: 40px;
-
+    font-family: 'Pacifico', cursive;
 }
 #logo__main2 {
     position: absolute;
@@ -71,8 +71,14 @@ body {
     font-weight: 550;
     cursor: pointer;
     display: none;
+    font-family: 'Pacifico', cursive;
 }
 
+#logo__main3 {
+    font-size: 40px;
+    font-weight: 550;
+    font-family: 'Pacifico', cursive;
+}
 
 
 
@@ -91,25 +97,27 @@ video {
 }
 #myBtn {
     display: none;
+    transform: rotate(-90deg);
     position: fixed;
-    bottom: 20px;
-    right: 30px;
+    bottom: 70px;
+    right: -42px;
     z-index: 99;
     font-size: 18px;
     border: none;
     outline: none;
-    background-color: rgb(223, 200, 128);
+    background-color: rgb(160, 123, 0);
     color: white;
     cursor: pointer;
-    padding: 15px;
-    border-radius: 15px;
+    padding: 5px 15px 5px 15px;
+    border-radius: 5px;
     opacity: 0.8;
-  }
-  #myBtn:hover {
+}
+
+#myBtn:hover {
     background-color: rgb(255, 233, 196);
     color:rgb(160, 123, 0) ;
     border:1px solid rgb(160, 123, 0);
-  }
+}
 
 
 #cata {
@@ -179,6 +187,7 @@ video {
     text-decoration: none;
     display: block;
     border-radius: 8px;
+    cursor:pointer;
   }
   .dropMenu:hover,
   .dropMenu1:hover ,
@@ -188,6 +197,7 @@ video {
     background-color:rgb(173, 131, 24);
     color: white;
     font-weight: bolder ;
+    cursor:pointer;
   }
 
 
@@ -275,7 +285,7 @@ video {
     align-items: center;
 }
 
-#MFcontainer , #WFcontainer{
+#MFcontainer , #MFcontainer1 ,#MFcontainerOuterwear , #MFcontainerJacket, #WFcontainer ,#WFcontainer1 , #WFcontainerCoat , #WFcontainerDress , #WFcontainerJacket{
     
     
     width: 100%;
@@ -285,14 +295,34 @@ video {
     color:rgb(117, 89, 19);
     font-weight: 700;
     justify-content: center;
+    -webkit-animation: slide-down .5s ease-out;
+    -moz-animation: slide-down .5s ease-out;
+    -webkit-animation: slide-down .5s ease-in;
+    -moz-animation: slide-down .5s ease-in;
 }
 
+@-webkit-keyframes slide-down {
+    0% { opacity :0;}
+    20% {opacity :1;}
+}
+
+#WFcontainerCoat , #WFcontainerDress , #WFcontainerJacket , #MFcontainerOuterwear, #MFcontainerJacket{
+    display:none
+}
 .product__item {
     font-size: 16px;
     font-family: "Circular Std",sans-serif;
     color:rgb(173, 131, 24);
     margin: 20px ;
-    
+    -webkit-animation: slide-down .5s ease-out;
+    -moz-animation: slide-down .5s ease-out;
+    -webkit-animation: slide-down .5s ease-in;
+    -moz-animation: slide-down .5s ease-in;
+}
+
+@-webkit-keyframes slide-down {
+    0% { opacity :0;}
+    20% {opacity :1;}
 }
 .product__image {
     width: AUTO;
@@ -444,34 +474,76 @@ video {
     position: relative;
     top:5px;
 }
+ /*  FOOTER  */
 
-/* FOOTER */
-
-
-
-#mainFooter {
+ #mainFooter {
     width: 100%;
-   
-    
-    border-top:2px solid  rgb(248, 231, 183);
-    border-bottom:4px solid rgb(160, 123, 0);
-    margin-top: 50px;
+    margin-top: 80px;
+
 }
 
 .contact__container {
     width: 100%;
-    height: 380px;
-    
-    border-bottom:2px solid rgb(160, 123, 0);
-    color: rgb(0, 0, 0);
+    height: 280px;
+    background-color: rgb(247, 236, 205);;
     text-align: center;
+    padding-top: 20px ;
 }
 #copyrightInfo {
     width: 100%;
-    height: 100px;
+    height:auto;
     background-color: rgb(247, 236, 205);
-    color: rgb(0, 0, 0);
+    color: rgb(87, 66, 0);
+    display: flex;
+    align-items: center;
     text-align: center;
+    justify-content: center;
+    flex-direction: column;
+   
+}
+.footerCon {
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+}
+#CorpInfo , #help {
+    color: rgb(148, 121, 34);
+    height: 300px;
+    margin: 20px;
+    display: flex;
+   width: 200px;
+   flex-direction: column;
+}
+.CorpInfo1 , .help1{
+    display: flex;
+    justify-self: start;
+    font-weight: bolder;
+    margin-bottom: 18px;
+    color: rgb(87, 66, 0);
+}
+.coList1 , .coList2 {
+    display: flex;
+    justify-content: left;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+.coList1:hover , .coList2:hover, .iconFooter i:hover {
+    color:rgba(2, 53, 25, 0.555);
+}
+.footText {
+    
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+.iconFooter {
+    width: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+    cursor: pointer;
 }
 
 
