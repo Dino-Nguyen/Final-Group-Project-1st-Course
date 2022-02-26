@@ -2,7 +2,7 @@
  NHÓM 1 
  
 1/ NGUYỄN THỦY TIÊN<br>
-2/ NGUYỄN TUẤN ANH<br>
+2/ NGUYỄN TUẤN ANH<br>(https://github.com/Harry-xdev)
 
 link web : https://dino-nguyen.github.io/Final-Group-Project-1st-Course/
 
