@@ -8,4 +8,4 @@ link web :
 
 Demo video : 
 
-{@vimeo:./images/demo video.mp4}
+@[vimeo](./images/demo video.mp4)
